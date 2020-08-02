@@ -1,0 +1,43 @@
+.swiper-container {
+    background: $primary;
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background: $swiper-bullet;
+}
+.swiper-pagination-bullet-active {
+    background: $text-color-form-items;
+}
+  
+.swiper-wrapper {
+    padding-top: 16px;
+    height: 110px;
+    flex-wrap: nowrap;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        overflow: hidden;
+        padding-top: 24px;
+    }
+    &--height {
+        height: auto;
+    }
+}

@@ -1,0 +1,30 @@
+.button-confirm {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $secondary;
+    background: $buttons-color;
+    border-radius: 16px;
+    height: 32px;
+    padding: 4px 40px 4px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &::after {
+    
+        content: url('../../src/img/dropdown.svg');
+        position: relative;
+        left: 16px;
+    }
+
+
+    &:hover {
+
+        filter: contrast(3);
+    }
+}

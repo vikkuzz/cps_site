@@ -1,0 +1,41 @@
+.scroll {
+  display: flex;
+  overflow-x: scroll;
+  list-style: none;
+  padding: 0;
+  
+  @media (min-width: $dekstop-min) {
+    & {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        justify-content: space-between;
+      }
+      &__item--active  {
+          background-color: $secondary;
+      }
+    }
+
+  &__item {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    color: #7E7E82;
+    font-weight: 500;
+    box-sizing: border-box;
+    &:active {
+      color: $buttons-color;
+    }
+    &--active {
+      border: 2px solid $scroll-active;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,0 +1,12 @@
+.main {
+    @media (min-width: $dekstop-min) {
+        &__scroll {
+            margin-top: 0;
+            margin-left: 30px;
+            font-size: 16px;
+        }
+    }
+    &__scroll {
+        margin-left: 16px;
+    }
+}

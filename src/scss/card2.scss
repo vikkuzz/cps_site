@@ -1,0 +1,39 @@
+.card2 {
+    display: flex;
+    align-items: center;
+    height: 160px;
+    background: $secondary url('../img/go.svg');
+    background-position: right 16px bottom 16px;
+    background-repeat: no-repeat;
+    border: 1px solid $small-border-color;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding-left: 16px;
+
+    &__text {
+        align-self: flex-start;
+        margin-top: 16px;
+        font-weight: 500;
+    }
+
+
+&:hover, &:active {
+    border: 1px solid $swiper-active;
+}
+
+    @media (min-width: $dekstop-min) {
+        & {
+            margin-bottom: 16px;
+            margin-right: 32px;
+            width: 240px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        & {
+            margin-bottom:  16px;
+            margin-right: 24px;
+            width: 224px;
+        }
+    }
+}

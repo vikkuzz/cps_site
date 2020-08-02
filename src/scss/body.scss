@@ -1,0 +1,10 @@
+.body {
+	background: $primary;
+	font-family: $font-main;
+	position: relative;
+
+    @media (min-width: $dekstop-min) {
+        margin-left: $mobile;
+        width: $dekstop-min;
+    }
+}

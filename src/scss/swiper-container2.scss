@@ -1,0 +1,23 @@
+.swiper-container2 {
+    width: 100%;
+    padding-top: 16px;
+    background: $primary;
+    min-width: 320px;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+    margin: 0 auto;
+    padding-left: 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+    }
+
+    &__paginator {
+        position: relative;
+        margin-top: 16px;
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
+}

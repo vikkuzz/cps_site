@@ -1,0 +1,33 @@
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px 24px;
+    &__contacts {
+        margin-bottom: 40px;
+    }
+    
+    &__link-mail {
+        margin-bottom: 12px;
+    }
+
+    &--mail {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: inherit; 
+    }
+
+    &--phone {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color: #1B1C21;
+    }
+    
+}
+

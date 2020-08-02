@@ -1,0 +1,9 @@
+.swiper-slide {
+
+    display: inline-block;
+
+    @media (min-width: 528px) {
+
+        width: auto;
+    }
+}

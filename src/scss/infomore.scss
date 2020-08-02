@@ -1,0 +1,32 @@
+.info-more {
+    border: none; 
+    outline: none;
+    background: inherit;
+    font-family: $font-main;
+    cursor: pointer;
+    @media (min-width: $tablet) {
+        & {
+            margin-top: 24px;
+        }
+    }
+    
+    @media (min-width: $dekstop-min) {
+        & {
+             &:before {
+                padding-left: 0;
+            }
+        }
+    }
+    &:before {
+        content: url(./../img/iconnext.svg);
+        padding-right: 16px;
+        padding-left: 24px;
+    }
+
+    &__name {
+        font-weight: 500;
+        &:active {
+            color: $buttons-color;
+        }
+    }
+}

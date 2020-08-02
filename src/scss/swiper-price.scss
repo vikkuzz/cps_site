@@ -1,0 +1,172 @@
+.swiper-price {
+
+    min-width: 320px;
+    height: 240px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+
+    @media (min-width: $tablet) {
+
+        width: auto;
+        height: auto;
+    }
+
+
+    &__header {
+        display: grid;
+        grid-template-columns: 50% 15% 15% 125px;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-color-secondary;
+        opacity: 0.72;
+        margin: 16px;
+
+        @media (max-width: $mobile-max) {
+            display: none;
+        }
+
+        @media (min-width: $dekstop-min) {
+            margin: 16px 24px;
+        }
+    }
+
+
+    &__wrapper {
+        display: grid;
+        @media (min-width: $tablet) {
+            display: grid;
+            height: 324px;
+            flex-direction: column;
+            background: $secondary;
+            border-radius: 6px;
+            padding-top: 0;
+        }
+    }
+
+
+    &__item {
+        width: 260px;
+        height: 200px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        position: relative;
+        padding: 16px;
+        background: $secondary;
+        border: 1px solid $small-border-color;
+        border-radius: 6px;
+        transition: 0.3s;
+
+        @media (min-width: $tablet) {
+
+            width: auto;
+            height: 64px;
+            display: grid;
+            grid-template-columns: 50% 15% 15% 125px;
+            margin: 0 16px;
+            padding: 16px 0;
+            align-items: center;
+            border: none;
+            border-bottom: 1px solid $small-border-color;
+            border-radius: unset;
+        }
+
+        @media (min-width: $dekstop-min) {
+
+            margin: 0 24px;
+            padding: 24px 0;
+        }
+    }
+
+
+    &__name {
+
+        margin-top: 36px;
+        position: relative;
+
+
+        @media (min-width: $tablet) {
+
+            margin-top: 0;
+        }
+    
+
+        &::before {
+
+            content: 'Ремонтные услуги';
+            line-height: 16px;
+            color: $text-color-secondary;
+            opacity: 0.72;
+            position: absolute;
+            top: -16px;
+            white-space: nowrap;
+
+
+            @media (min-width: $tablet) {
+
+                display: none;
+            }
+        }
+    }
+
+    &__value {
+
+        position: relative;
+
+        &::before {
+
+            content: 'Цена';
+            line-height: 16px;
+            color: $text-color-secondary;
+            opacity: 0.72;
+            position: absolute;
+            top: -16px;
+            white-space: nowrap;
+
+
+            @media (min-width: $tablet) {
+
+                display: none;
+            }
+        }
+    }
+
+    &__time {
+
+        position: relative;
+
+        &::before {
+
+            content: 'Срок';
+            line-height: 16px;
+            color: $text-color-secondary;
+            opacity: 0.72;
+            position: absolute;
+            top: -16px;
+            white-space: nowrap;
+
+
+            @media (min-width: $tablet) {
+
+                display: none;
+            }
+        }
+    }
+
+    &__order {
+
+        align-self: flex-end;
+        position: absolute;
+        bottom: 16px;
+
+
+        @media (min-width: $tablet) {
+
+            position: unset;
+        }
+    }
+}

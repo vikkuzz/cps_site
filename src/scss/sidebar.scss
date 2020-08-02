@@ -1,0 +1,47 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: $mobile;
+    height: 100vh;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background: $secondary;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    &__body {
+        background: $secondary;
+    font-family: $font-main;
+        &--size {
+            margin: 0 auto;
+            @media (min-width: $dekstop-min) {
+                & {
+                    margin: 0 auto;
+                    max-width: $dekstop-max;
+                }
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        padding: 18px 24px;
+        width: auto;
+        height: 86px;
+        align-items: center;
+        @media (min-width: $dekstop-min) {
+           padding-left: 0; 
+        }
+    }
+    
+    &__header-logo {
+        margin-left: 16px;
+        @media (min-width: $dekstop-min) {
+            margin-left: 0; 
+         }
+    }
+
+    &__btn {
+        position: relative;
+    }
+}
