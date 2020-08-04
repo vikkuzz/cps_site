@@ -8,7 +8,8 @@
 .body {
   background: #F8F8F8;
   font-family: "TT Lakes";
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   @media (min-width: 1120px) {
     .body {
       display: flex;
@@ -857,32 +858,25 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  height: 100vh;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: visible;
   background: #FFFFFF;
   margin: -5px;
   z-index: 9; }
   .sidebar__body {
     background: #FFFFFF;
     font-family: "TT Lakes"; }
-    .sidebar__body--size {
-      margin: 0 auto; }
-      @media (min-width: 1120px) {
-        .sidebar__body--size {
-          margin: 0 auto;
-          max-width: 1440px; } }
+    @media (min-width: 1120px) {
+      .sidebar__body--size {
+        max-width: 1440px; } }
   .sidebar__header {
     display: flex;
     padding: 18px 24px;
     width: auto;
     height: 86px;
     align-items: center; }
-    @media (min-width: 1120px) {
-      .sidebar__header {
-        padding-left: 0; } }
   .sidebar__header-logo {
     margin-left: 16px; }
     @media (min-width: 1120px) {
@@ -944,47 +938,39 @@
   padding: 10px 0;
   margin-bottom: 12px;
   font-family: "TT Lakes"; }
-
-.btn-nav__name {
-  margin-left: 24px;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  z-index: 1; }
-
-.btn-nav,
-.btn-nav:after,
-.btn-nav:before {
-  transition: all .3s;
-  position: relative; }
-
-.btn-nav:active {
-  transition: all .1s;
-  color: #FF3E79; }
-
-.btn-nav:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #B8FFEC;
-  height: 3px; }
-
-.btn-nav:hover:after {
-  width: 100%; }
-
-.btn-nav--active {
-  background-image: url(./static/active.svg);
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-  left: 0;
-  color: #7E7E82; }
+  .btn-nav .btn-nav__name {
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1; }
+  .btn-nav, .btn-nav:after, .btn-nav:before {
+    transition: all .3s;
+    position: relative; }
+  .btn-nav:active {
+    transition: all .1s;
+    color: #FF3E79; }
+  .btn-nav:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #B8FFEC;
+    height: 3px; }
+  .btn-nav:hover:after {
+    width: 100%; }
+  .btn-nav--active {
+    background-image: url(./static/active.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    left: 0;
+    color: #7E7E82; }
 
 .lang {
   display: flex; }
