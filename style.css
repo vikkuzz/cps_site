@@ -141,12 +141,13 @@
 .header__title {
   margin-left: 16px;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  position: relative; }
 
 .header__title::before {
   content: url(./static/highlighth1.svg);
   position: absolute;
-  left: 0; }
+  left: -10px; }
 
 /* Header left */
 .header__left {
