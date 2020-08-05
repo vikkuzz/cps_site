@@ -446,7 +446,7 @@
       width: 100%; } }
 
 .swiper-slide:hover {
-  border: 1px solid #1B1C21; }
+  color: #1B1C21; }
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -564,8 +564,9 @@
         border-radius: unset; } }
     @media (min-width: 1366px) {
       .swiper-price__item {
-        margin: 0 24px;
-        padding: 24px 0; } }
+        margin: 0 24px; } }
+    .swiper-price__item:hover {
+      color: #FF3E79; }
   .swiper-price__name {
     margin-top: 36px;
     position: relative; }
@@ -783,7 +784,8 @@
       top: 2px;
       transition: 0.3s; }
     .page__link:focus, .page__link:hover {
-      opacity: 0.8; }
+      opacity: 0.8;
+      color: #FF3E79; }
       .page__link:focus::after, .page__link:hover::after {
         -webkit-filter: drop-shadow(6px 0 0 #FF3E79);
                 filter: drop-shadow(6px 0 0 #FF3E79); }
