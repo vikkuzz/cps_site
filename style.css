@@ -9,8 +9,7 @@
   background: #F8F8F8;
   font-family: "TT Lakes";
   position: relative;
-  margin: 0 auto;
-  overflow-x: hidden; }
+  margin: 0 auto; }
   @media (min-width: 1366px) {
     .body {
       display: flex;
@@ -256,7 +255,8 @@
   .main__scroll {
     margin-top: 0;
     margin-left: 30px;
-    font-size: 16px; } }
+    font-size: 16px;
+    overflow-x: auto; } }
 
 .main__scroll {
   margin-left: 16px; }
@@ -293,7 +293,7 @@
       min-width: 360px;
       margin: 0 20px 0 48px; }
     .main-info__block {
-      max-height: 135px;
+      max-height: 130px;
       min-width: 312px;
       overflow: hidden; }
     .main-info__text {
