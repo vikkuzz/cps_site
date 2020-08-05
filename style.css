@@ -9,7 +9,8 @@
   background: #F8F8F8;
   font-family: "TT Lakes";
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
   @media (min-width: 1366px) {
     .body {
       display: flex;
@@ -443,6 +444,9 @@
   @media (min-width: 768px) {
     .swiper-container {
       width: 100%; } }
+
+.swiper-slide:hover {
+  border: 1px solid #1B1C21; }
 
 .swiper-pagination-bullet {
   width: 12px;
