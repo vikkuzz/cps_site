@@ -970,7 +970,8 @@
     background-image: url(./static/active.svg);
     background-repeat: no-repeat;
     background-position: 0 50%;
-    left: 0;
+    position: relative;
+    left: 5px;
     color: #7E7E82; }
 
 .lang {
