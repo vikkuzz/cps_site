@@ -263,7 +263,13 @@
   margin-left: 16px; }
 
 .main-info__block {
-  margin: auto 20px; }
+  margin: auto 20px;
+  height: 90px;
+  width: 288px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .main-info__block {
+      height: 160px; } }
 
 .main-info__text {
   font-family: "TT Lakes";
@@ -294,7 +300,7 @@
       min-width: 360px;
       margin: 0 20px 0 48px; }
     .main-info__block {
-      max-height: 130px;
+      max-height: 135px;
       min-width: 312px;
       overflow: hidden; }
     .main-info__text {
