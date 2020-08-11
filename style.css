@@ -541,7 +541,7 @@
       width: 240px; } }
 
 .swiper-price {
-  max-width: 1050px;
+  max-width: 1200px;
   min-width: 320px;
   height: 240px;
   font-size: 14px;
@@ -609,6 +609,7 @@
       color: #FF3E79; }
   .swiper-price__name {
     margin-top: 36px;
+    margin-left: 24px;
     position: relative; }
     @media (min-width: 768px) {
       .swiper-price__name {
@@ -656,6 +657,7 @@
     bottom: 16px; }
     @media (min-width: 768px) {
       .swiper-price__order {
+        margin-right: 24px;
         position: unset; } }
 
 .swiper-container2 {
@@ -686,12 +688,10 @@
   list-style: none;
   padding: 0;
   z-index: 1;
-  margin: 0 auto;
-  padding-left: 16px; }
+  margin: 0 0; }
   @media (min-width: 768px) {
     .swiper-container3 {
       box-sizing: border-box;
-      padding-left: 24px;
       padding-right: 24px; } }
   .swiper-container3__price-and-btn {
     display: flex;
