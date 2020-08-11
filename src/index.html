@@ -8,6 +8,7 @@
     <meta name="description" content="Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.">
 </head>
 <body class='page body body-size'> 
+    <div class="page__block">
     <header class='header'>
         <div class="header__layout">
             <div class="header__left">
@@ -33,7 +34,6 @@
             </div>
         </div>
         <h1 class='header__title'>Услуги и сервисы</h1>
-        </div>
     </header>
     <main class="main">
         <ul class='main__scroll scroll'>
@@ -213,10 +213,10 @@
 
     <h2 class="subtitle">Цены на услуги</h2>
 
-      <!-- Swiper price-->
+      <!-- Swiper3-->
 
 
-      <div class="swiper-container swiper-price page__swiper-type2">
+      <div class="swiper-container3 swiper-price page__swiper-type2"  data-mobile="false">
 
         <div class="swiper-price__header">
 
@@ -226,11 +226,11 @@
 
         </div>
 
-        <div class="swiper-wrapper swiper-price__wrapper">
+        <div class="swiper-container3 swiper-wrapper swiper-price__wrapper gallery3">
 
             <div class="swiper-slide">
 
-                <div class="swiper-price__item">
+                <div class="swiper-price__item card3">
 
                     <span class="swiper-price__name">Диагностика</span>
                     <span class="swiper-price__value">Бесплатно</span>
@@ -243,11 +243,11 @@
 
             <div class="swiper-slide">
 
-                <div class="swiper-price__item">
+                <div class="swiper-price__item card3">
 
                     <span class="swiper-price__name">Замена дисплея</span>
                     <span class="swiper-price__value">1000 &#8381;</span>
-                    <span class="swiper-price__time">30-120 мин</span>
+                    <span class="swiper-price__time">30-120<br> мин</span>
                     <button class="button-confirm swiper-price__order">Заказать</button>
 
                 </div>
@@ -256,11 +256,11 @@
 
             <div class="swiper-slide">
 
-                <div class="swiper-price__item">
+                <div class="swiper-price__item card3">
 
                     <span class="swiper-price__name">Замена полифонического динамика</span>
                     <span class="swiper-price__value">1000 &#8381;</span>
-                    <span class="swiper-price__time">30-120 мин</span>
+                    <span class="swiper-price__time">30-120<br> мин</span>
                     <button class="button-confirm swiper-price__order">Заказать</button>
 
                 </div>
@@ -269,11 +269,11 @@
 
             <div class="swiper-slide">
 
-                <div class="swiper-price__item">
+                <div class="swiper-price__item card3">
 
                     <span class="swiper-price__name">Тестирование с выдачей технического заключения</span>
                     <span class="swiper-price__value">1000 &#8381;</span>
-                    <span class="swiper-price__time">30-120 мин</span>
+                    <span class="swiper-price__time">30-120<br> мин</span>
                     <button class="button-confirm swiper-price__order">Заказать</button>
 
                 </div>
@@ -282,11 +282,11 @@
 
             <div class="swiper-slide">
 
-                <div class="swiper-price__item">
+                <div class="swiper-price__item card3">
 
                     <span class="swiper-price__name">Замена программного обеспечения</span>
                     <span class="swiper-price__value">1000 &#8381;</span>
-                    <span class="swiper-price__time">30-120 мин</span>
+                    <span class="swiper-price__time">30-120<br>мин</span>
                     <button class="button-confirm swiper-price__order">Заказать</button>
 
                 </div>
@@ -324,12 +324,11 @@
 
     </footer>
 
-  </div>
-
+</div>
 
   <!--Sidebar-->
 
-  <div class='sidebar'> 
+  <div class='sidebar page__sidebar'> 
     <div class="sidebar__body sidebar__body--size">   
         <div class='sidebar__header'>
             <button class="btn-round sidebar__btn btn-round--back"><span class='span'></span></button>  
@@ -339,10 +338,10 @@
 
         <nav class="menu">
             <ul class="menu__nav">
-                <li class="btn-nav btn-nav--active">
+                <li class="btn-nav">
                     <a class="btn-nav__name"  href="#">Ремонт техники</a>
                 </li>
-                <li class="btn-nav">
+                <li class="btn-nav  btn-nav--active">
                     <a class="btn-nav__name" href="#">Услуги и сервисы</a>
                 </li>
                 <li class="btn-nav">
@@ -368,7 +367,7 @@
 
         <div class="sidebar-footer">
             <div class="sidebar-footer__contacts">
-                <nav class="nav footer__nav">
+                <nav class="nav sidebar-footer__nav">
                     <button class='btn-round sidebar__btn btn-round--call'></button>
                     <button class="btn-round sidebar__btn btn-round--chat"></button>
                     <button class="btn-round sidebar__btn btn-round--profile"></button>

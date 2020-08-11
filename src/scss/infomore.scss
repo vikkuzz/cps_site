@@ -17,6 +17,10 @@
             }
         }
     }
+    &:hover {
+        transition: all .3s;
+        color: $text-color-secondary;
+    }
     &:before {
         content: url(./../img/iconnext.svg);
         padding-right: 16px;

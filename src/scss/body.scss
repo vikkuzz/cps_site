@@ -1,10 +1,12 @@
 .body {
 	background: $primary;
 	font-family: $font-main;
-	position: relative;
+    position: relative;
+    margin: 0 auto;
+    overflow-x: hidden;
 
     @media (min-width: $dekstop-min) {
-        margin-left: $mobile;
-        width: $dekstop-min;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }

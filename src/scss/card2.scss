@@ -10,30 +10,46 @@
     border-radius: 6px;
     padding-left: 16px;
 
+    @media (max-width: 767px) {
+            width: 224px;
+            margin-right: 16px;
+    }
+
     &__text {
         align-self: flex-start;
         margin-top: 16px;
         font-weight: 500;
     }
 
+    @media (min-width: 1000px) {
+        &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+    @media (min-width: $dekstop-min) {
+        &:nth-child(4n) {
+        margin-right:32px;
+    }
+}
+
 
 &:hover, &:active {
     border: 1px solid $swiper-active;
 }
 
+@media (min-width: $tablet) {
+    & {
+        margin-bottom:  16px;
+        margin-right: 24px;
+        width: 224px;
+    }
+}
     @media (min-width: $dekstop-min) {
         & {
             margin-bottom: 16px;
             margin-right: 32px;
             width: 240px;
-        }
-    }
-
-    @media (min-width: $tablet) {
-        & {
-            margin-bottom:  16px;
-            margin-right: 24px;
-            width: 224px;
         }
     }
 }

@@ -27,6 +27,10 @@
     &:active {
       color: $buttons-color;
     }
+    &:hover {
+      transition: all .3s;
+      color: $text-color-primary;
+    }
     &--active {
       border: 2px solid $scroll-active;
         box-sizing: border-box;

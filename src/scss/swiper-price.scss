@@ -1,10 +1,11 @@
 .swiper-price {
-
+    max-width: 1200px;
     min-width: 320px;
     height: 240px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
+    margin-left: 0;
 
 
     @media (min-width: $tablet) {
@@ -23,10 +24,12 @@
         color: $text-color-secondary;
         opacity: 0.72;
         margin: 16px;
+        ;
 
         @media (max-width: $mobile-max) {
             display: none;
         }
+
 
         @media (min-width: $dekstop-min) {
             margin: 16px 24px;
@@ -76,9 +79,10 @@
         }
 
         @media (min-width: $dekstop-min) {
-
             margin: 0 24px;
-            padding: 24px 0;
+        }
+        &:hover {
+            color: $buttons-color;
         }
     }
 
@@ -86,6 +90,7 @@
     &__name {
 
         margin-top: 36px;
+        margin-left: 24px;
         position: relative;
 
 
@@ -136,7 +141,6 @@
     }
 
     &__time {
-
         position: relative;
 
         &::before {
@@ -165,7 +169,7 @@
 
 
         @media (min-width: $tablet) {
-
+            margin-right: 24px;
             position: unset;
         }
     }

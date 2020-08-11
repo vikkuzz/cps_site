@@ -28,6 +28,12 @@
         letter-spacing: -0.6px;
         color: #1B1C21;
     }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 26px;
+    }
     
 }
 

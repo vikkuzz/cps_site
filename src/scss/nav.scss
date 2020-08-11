@@ -13,7 +13,7 @@
     }
 
     @media (min-width: $dekstop-min) {
-        & {
+        &--position {
             display: none;
         }
     }

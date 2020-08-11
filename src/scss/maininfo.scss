@@ -1,5 +1,11 @@
 .main-info__block {
     margin: auto 20px;
+    height: 90px;
+    width: 288px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        height: 160px;
+    }
 }
 
 .main-info__text {

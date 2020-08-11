@@ -1,26 +1,29 @@
 .sidebar {
+    position: absolute;
+    left: -400px;
+    transition: .3s;
+    height: auto;
     display: flex;
     flex-direction: column;
-    min-width: $mobile;
-    height: 100vh;;
-    position: absolute;
+    width: auto;
     top: 0;
-    left: 0;
-    overflow-y: auto;
+    overflow-y: visible;
     background: $secondary;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    margin: -5px;
+    z-index: 9;
+            @media (min-width: $dekstop-min) {
+                & {
+                    position: relative;
+                    display: block;
+                    left: 0;
+                    top: 0;
+                    width: 320px;
+                }
+            }
+        
     &__body {
         background: $secondary;
     font-family: $font-main;
-        &--size {
-            margin: 0 auto;
-            @media (min-width: $dekstop-min) {
-                & {
-                    margin: 0 auto;
-                    max-width: $dekstop-max;
-                }
-            }
-        }
     }
 
     &__header {
@@ -29,9 +32,6 @@
         width: auto;
         height: 86px;
         align-items: center;
-        @media (min-width: $dekstop-min) {
-           padding-left: 0; 
-        }
     }
     
     &__header-logo {
