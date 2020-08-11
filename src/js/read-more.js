@@ -20,8 +20,8 @@ else
 }
 });
 
-var wrap = document.querySelector('.swiper-wrapper');
-var buttonShowAll = document.querySelector('.body-slyder__read-more-button');
+var wrap = document.querySelector('.swiper-wrapper1');
+var buttonShowAll = document.querySelector('.info-more__name1');
 var isSlideView = true;
 
 buttonShowAll.addEventListener("click", function() {
@@ -42,20 +42,20 @@ else
 });
 
 var wrap2 = document.querySelector('.swiper-wrapper2');
-var buttonShowAll2 = document.querySelector('.body-slyder__read-more-button2');
+var buttonShowAll2 = document.querySelector('.info-more__name2');
 var isSlideView2 = true;
 
 buttonShowAll2.addEventListener("click", function() {
     if (isSlideView2)
 {
-    wrap2.classList.add('swiper-wrapper2__height');
+    wrap2.classList.add('swiper-wrapper2--height');
     buttonShowAll2.classList.add('arrowUp');
     buttonShowAll2.textContent = 'Скрыть';
     isSlideView2  = false;
 }
 else
 {
-    wrap2.classList.remove('swiper-wrapper2__height');
+    wrap2.classList.remove('swiper-wrapper2--height');
     buttonShowAll2.classList.remove('arrowUp');
     buttonShowAll2.textContent = 'Показать всё';
     isSlideView2  = true;
