@@ -4,9 +4,13 @@
     height: 110px;
     overflow: hidden;
     padding-top: 16px;
-    @media (max-width: 767px) {
+    padding-left: 16px;
+    @media (max-width: $mobile-max) {
         width: 4080px;
         transition-duration: 0ms;
         transform: translate3d(-720px, 0px, 0px);
+    }
+    @media (min-width: $tablet) {
+        padding-left: 0;
     }
 }

@@ -1,0 +1,19 @@
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background: $swiper-bullet;
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.swiper-pagination--position {
+    bottom: -10px;
+    @media (min-width: $tablet) {
+        bottom: 0;
+    }
+}

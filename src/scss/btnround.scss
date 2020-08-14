@@ -1,4 +1,5 @@
 .btn-round {
+	position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -131,7 +132,10 @@
 		background-image: url(../img/iconsearch.svg);
 		background-repeat: no-repeat;
 		background-position: center;
-		margin-left: 100px;
+		margin-left: 50px;
+		@media (min-width: $dekstop-min) {
+			margin-left: 100px;
+		}
 	}
 	
 	&:active {

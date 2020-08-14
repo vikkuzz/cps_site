@@ -1,4 +1,5 @@
-import Swiper from 'swiper';
+import Swiper , { Pagination } from 'swiper';
+Swiper.use([Pagination]);
 
 const slider2 = document.querySelector('.swiper-container2');
 
@@ -18,7 +19,7 @@ function mobileSlider2() {
           clickable: true,
         },
       });
-      slider2.dataset.mobile == 'true';
+      slider2.dataset.mobile = 'true';
     }
     if (window.innerWidth > 767) {
       slider2.dataset.mobile = 'false';

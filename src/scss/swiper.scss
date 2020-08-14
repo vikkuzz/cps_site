@@ -15,18 +15,8 @@
     .swiper-slide:hover {
     color: $text-color-primary;
     }
-    .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    opacity: 1;
-    background: $swiper-bullet;
-}
-.swiper-pagination-bullet-active {
-    background: $text-color-form-items;
-}
+
+    
   
 .swiper-wrapper {
     padding-top: 16px;
@@ -52,4 +42,10 @@
 
 .swiper-wrapper2--height {
         height: auto;
+}
+
+.swiper-btn, .swiper-btn2 {
+    @media (max-width: 767px) {
+        display: none;
+    }
 }

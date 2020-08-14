@@ -1,18 +1,22 @@
 .gallery2 {
     display: flex;
     flex-wrap: nowrap;
+    min-height: 200px;
     overflow: hidden;
     padding-top: 24px;
+    padding-left: 16px;
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max) {
         width: 4080px;
         transition-duration: 0ms;
         transform: translate3d(-720px, 0px, 0px);
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         padding-top: 16px;
         flex-wrap: wrap;
+        min-height: 160px;
+        padding-left: 0;
     }
 
     &__height {

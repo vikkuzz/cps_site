@@ -1,0 +1,43 @@
+.body-height-hidden {
+
+        height: auto;
+        overflow: hidden;
+        position: fixed;
+        opacity: 0.1;
+        width: 100%;
+    
+    @media (min-width: 1366px) {
+        position: relative;
+        opacity: 1;
+    }
+}
+
+.sidebar-hide {
+    position: absolute;
+    height: auto;
+    top: 0;
+    transform: translateX(-400px);
+    transition: all 1s;
+    opacity: 0;
+
+    @media (min-width: 1366px) {
+        position: relative;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.sidebar-open {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: -400px;
+    transform: translateX(400px);
+    transition: all 0.4s;
+
+    @media (min-width: 1366px) {
+        position: relative;
+        transform: none;
+        width: auto;
+    }
+}

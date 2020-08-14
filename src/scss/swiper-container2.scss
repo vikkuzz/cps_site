@@ -8,14 +8,14 @@
     z-index: 1;
     margin: 0 auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         padding-left: 24px;
     }
 
     &__paginator {
         position: relative;
         margin-top: 16px;
-        @media (min-width: 768px){
+        @media (min-width: $tablet){
             display: none;
         }
     }

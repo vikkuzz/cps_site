@@ -11,6 +11,10 @@
     padding: 16px;
     border-top: 1px solid $horizontal-borderline-color;
 
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+
 
         @media (min-width: 768px) {
 
