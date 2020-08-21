@@ -8,27 +8,31 @@
     width: auto;
     top: 0;
     overflow-y: visible;
-    background: $secondary;
     margin: -5px;
     z-index: 9;
             @media (min-width: $dekstop-min) {
                 & {
-                    position: relative;
+                    position: sticky;
                     display: block;
                     left: 0;
                     top: 0;
-                    width: 320px;
                 }
             }
         
     &__body {
+        position: relative;
         background: $secondary;
-    font-family: $font-main;
+        font-family: $font-main;
+        height: 100vh;
+        @media (max-width: 1365px) {
+            width: 320px;
+         }
+
     }
 
     &__header {
         display: flex;
-        padding: 18px 24px;
+        padding: 18px 16px;
         width: auto;
         height: 86px;
         align-items: center;

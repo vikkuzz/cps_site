@@ -1,15 +1,10 @@
 .body-height-hidden {
-
         height: auto;
         overflow: hidden;
         position: fixed;
         opacity: 0.1;
         width: 100%;
     
-    @media (min-width: 1366px) {
-        position: relative;
-        opacity: 1;
-    }
 }
 
 .sidebar-hide {
@@ -20,8 +15,9 @@
     transition: all 1s;
     opacity: 0;
 
-    @media (min-width: 1366px) {
-        position: relative;
+    @media (min-width: $dekstop-min) {
+        position: sticky;
+        top: 0px;
         transform: none;
         opacity: 1;
     }
@@ -30,12 +26,13 @@
 .sidebar-open {
     position: absolute;
     height: 100vh;
+    width: 320px;
     top: 0;
     left: -400px;
     transform: translateX(400px);
     transition: all 0.4s;
 
-    @media (min-width: 1366px) {
+    @media (min-width: $dekstop-min) {
         position: relative;
         transform: none;
         width: auto;

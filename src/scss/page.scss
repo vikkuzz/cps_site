@@ -6,6 +6,11 @@
     position: relative;
     min-width: 320px;
     max-width: 1712px;
+    @media (min-width: $dekstop-min) { 
+        display: flex;
+        justify-content: center;
+    }
+    
     &__wrapper {
         position: absolute;
         top: 0;
@@ -15,24 +20,30 @@
         transform: scale(1);
     }
 
-        &__block-content {
+    &__block-content {
 
-            transition: 0.3s;
+        transition: 0.3s;
     
     
-            @media (min-width: 1366px) {
-                
-                margin-left: 320px;
-            }
-    
-    
-            &--hidden {
-    
-                filter: blur(1.8px) grayscale(0.4) opacity(0.7);
-                height: 100vh;
-                overflow: hidden;
-            }
+        @media (min-width: $dekstop-min) { 
+            margin-left: 320px;
         }
+    
+    
+        &--hidden {
+    
+            filter: blur(1.8px) grayscale(0.4) opacity(0.7);
+            height: 100vh;
+            overflow: hidden;
+        }
+    }
+
+    &__sidebar {
+        @media (min-width: $dekstop-min) {
+            background: $secondary;
+        }
+        
+    }
 
     &__paragraph {
 
@@ -43,7 +54,7 @@
         max-width: 420px;
 
         
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
 
             margin: 24px;
             margin-bottom: 16px;

@@ -41,9 +41,10 @@
         &__logo {
             min-width: 360px;
             margin: 0 20px 0 48px;
+            max-height: 360px;
         }
         &__block {
-            max-height: 135px;
+            height: 135px;
             min-width: 312px;
             overflow: hidden;
         }

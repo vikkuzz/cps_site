@@ -1,0 +1,17 @@
+  .closed-menu {
+    display: none;
+    -webkit-animation-name: animaclose;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animaclose;
+    animation-duration: 0.4s;
+
+    @-webkit-keyframes animaclose {
+        from {right: 100px; opacity:1} 
+        to {right: 0; opacity:0}
+    }
+    
+    @keyframes animaclose {
+        from {right: 100px; opacity:1} 
+        to {right: 0px; opacity:0}
+    }
+}

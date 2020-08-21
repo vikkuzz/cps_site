@@ -32,7 +32,6 @@
 
 	  &:focus {
 		outline: 0;
-		color: #FF3E79;
 		opacity: 1;
 	  }
 
@@ -137,6 +136,32 @@
 			margin-left: 100px;
 		}
 	}
+
+	&--send { 
+			font-family: 'TTLakes';
+			font-size: 12px;
+			align-self: flex-end;
+			line-height: 24px;
+			letter-spacing: -0.15px;
+			text-transform: uppercase;
+			background: $buttons-color url("./../img/go.svg");
+			background-position-x: 85px;
+			background-position-y: 4px;
+			background-repeat: no-repeat;
+			color: $secondary;
+			width: 119px;
+			height: 32px;
+			border-radius: 16px;
+			text-align: left;
+			padding-left: 12px;
+			margin-top: 23px;
+			margin-bottom: 23px;
+			margin-right: 16px;
+		
+			@media (min-width: 540px) {
+				margin-right: 32px;
+			}
+		}
 	
 	&:active {
 		opacity: 0.8;

@@ -8,6 +8,37 @@
     @media (min-width: $dekstop-min) {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    &__input {
+        background: $secondary;
+        border: 1px solid $small-border-color;
+        border-radius: 8px;
+        height: 48px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        margin: 12px 16px;
+    
+        @media (min-width: 1366px) {
+            margin: 8px 32px;
+        }
+    
+        &::placeholder {
+            font-family: $font-main;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;  
+            letter-spacing: -0.2px;
+            color: $text-color-form-items;
+        }
     }
 }
 
+.dekstop {
+    @media (min-width: $dekstop-min) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+ }
+}

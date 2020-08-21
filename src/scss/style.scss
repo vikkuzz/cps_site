@@ -1,5 +1,6 @@
 @import 'variables.scss';
 
+@import './../../node_modules/swiper/swiper-bundle.css';
 
 @import 'swiper-slide.scss';
 
@@ -64,3 +65,15 @@
 @import 'swiper-pagination-bullet-active.scss';
 
 @import  'wrapp-sidebar.scss';
+
+@import 'wrap-menu.scss';
+
+@import 'inputs.scss';
+
+@import 'wrap-call.scss';
+
+@import 'call-menu.scss';
+
+@import 'closed-menu.scss';
+
+@import 'menu-right.scss';

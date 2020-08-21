@@ -1,0 +1,89 @@
+.menu-right {
+    font-family: $font-main;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    width: 320px;
+    height: 100vh;
+    min-height: 700px;
+    padding-top: 24px;
+    background-color: $secondary;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    -webkit-animation-name: animatemenu;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatemenu;
+    animation-duration: 0.4s;
+    
+
+    @-webkit-keyframes animatemenu {
+        from {right:-400px; opacity:0} 
+        to {right:0; opacity:1}
+    }
+    
+    @keyframes animatemenu {
+        from {right:-400px; opacity:0} 
+        to {right:0; opacity:1}
+    }
+    
+    @media (min-width: 1366px) {
+        padding-top: 40px;
+        width: 440px;
+    }
+
+    &__h1 {
+        position: relative;
+        font-size: 24px;
+        line-height: 32px;
+        padding-left: 16px;
+    
+        @media (min-width: 1366px) {
+            padding-left: 32px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 32px;
+            background-image: url(./../img/highlighth1.svg);
+        }
+    
+        
+    }
+    
+
+    &__close-button {
+        margin-left: 16px;
+        margin-bottom: 24px;
+        width: 40px;
+        height: 40px;
+        background-image: url('./../img/iconback.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: 1366px) {
+        position: fixed;
+        right: 470px;
+        }
+    }
+    &__confirm {
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-color-secondary;
+        margin: 8px 16px;
+    
+        @media (min-width: 540px) {
+            padding: 8px 32px;
+        }
+    }
+
+    &--link {
+        color: $buttons-color;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,42 @@
+.call-menu {
+    font-family: $font-main;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        width: 320px;
+        height: 100vh;
+        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+        min-height: 700px;
+        padding-top: 24px;
+        background-color: $secondary;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    
+        -webkit-animation-name: animatemenu;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatemenu;
+        animation-duration: 0.4s;
+        
+    
+        @-webkit-keyframes animatemenu {
+            from {right:-400px; opacity:0} 
+            to {right:0; opacity:1}
+        }
+        
+        @keyframes animatemenu {
+            from {right:-400px; opacity:0} 
+            to {right:0; opacity:1}
+        }
+        
+        @media (min-width: 1366px) {
+            padding-top: 40px;
+            width: 440px;
+        }
+        &--link {
+            color: $buttons-color;
+            text-decoration: none;
+        }
+}
