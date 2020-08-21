@@ -8,6 +8,8 @@
     <meta name="description" content="Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.">
 <link href="style.css" rel="stylesheet"></head>
 <body class="page body body-size"> 
+
+<div class="dekstop">
     <div class="page__block">
     <header class="header">
         <div class="header__layout">
@@ -216,7 +218,7 @@
       
 
 
-      <div class="swiper-container3 swiper-price page__swiper-type2" data-mobile="false">
+      <div class="swiper-container3 swiper-container_offset swiper-price page__swiper-type2" data-mobile="false">
 
         <div class="swiper-price__header">
 
@@ -226,7 +228,7 @@
 
         </div>
 
-        <div class="swiper-container3 swiper-wrapper swiper-price__wrapper gallery3">
+        <div class="swiper-wrapper swiper-price__wrapper gallery3">
 
             <div class="swiper-slide">
 
@@ -295,7 +297,7 @@
 
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination--position"></div>
 
     </div>
 
@@ -368,8 +370,8 @@
         <div class="sidebar-footer">
             <div class="sidebar-footer__contacts">
                 <nav class="nav sidebar-footer__nav">
-                    <button class="btn-round sidebar__btn btn-round--call"></button>
-                    <button class="btn-round sidebar__btn btn-round--chat"></button>
+                    <button class="btn-round sidebar__btn btn-round--call btn-round--call-modal"></button>
+                    <button class="btn-round sidebar__btn btn-round--chat btn-round--chat-modal"></button>
                     <button class="btn-round sidebar__btn btn-round--profile"></button>
                 </nav>
                 <div class="sidebar-footer__links">
@@ -398,6 +400,45 @@
         </div>
     </div> 
   </div>
+</div>
+
+<div class="wrap-menu menu-right">
+        <button class="btn-round menu-right__close-button"></button>
+                
+        <h1 class="menu-right__h1">
+            Обратная связь
+        </h1>
+        <div class="inputs">
+            <input type="text" class="body__input inputs__name" placeholder="Имя">
+            <input type="tel" class="body__input inputs__phone" placeholder="Телефон">
+            <input type="email" class="body__input inputs__mail" placeholder="Электронная почта">
+            <textarea class="body__input inputs__message" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="menu-right__confirm">
+           Нажимая “отправить”, вы даете согласие на <a href="#" class="menu-right--link">обработку персональных данных</a> и соглашаетесь с нашей 
+           <a href="#" class="menu-right--link">политикой конфиденциальности</a>
+        </div>
+
+        <button class="btn-round body__button btn-round--send">Отправить</button>
+
+</div>
+
+<div class="wrap-call call-menu">
+        <button class="btn-round wrap-call__close-button"></button>
+                
+        <h1 class="wrap-call__h1">
+            Заказать звонок
+        </h1>
+        <div class="inputs">
+            <input type="tel" class="body__input inputs__phone" placeholder="Телефон">
+        </div>
+        <div class="wrap-call__confirm">
+           Нажимая “отправить”, вы даете согласие на <a href="#" class="call-menu--link">обработку персональных данных</a> 
+           и соглашаетесь с нашей <a href="#" class="call-menu--link">политикой конфиденциальности</a>
+        </div>
+
+        <button class="btn-round body__button btn-round--send">Отправить</button>
+</div>
 
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 
